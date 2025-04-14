@@ -5,5 +5,7 @@ import type { HomeEntry } from "@/types";
 
 const entry = (await getIndex("home")) as HomeEntry;
 ---
-
+<head>
+    <title>Nyx Website</title>
+</head>
 <EntryLayout entry={entry} />

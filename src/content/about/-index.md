@@ -1,8 +1,10 @@
 ---
-title: Hey, I'm Jane Doe!
+title: Hiiii, I am Nyx
 description: this is meta description
-image: "@assets/profile/jane-doe.jpg"
+image: "@assets/profile/boykisser.svg"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+
+I am avid Twitter poster and data science student, here u will find my blogposts and projects I work on like my upcoming bachelor thesis.
+U might find also the occasional femboy pics here maybe who knows :3
