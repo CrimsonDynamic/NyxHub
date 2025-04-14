@@ -96,4 +96,4 @@
   # Try to append a trailing slash and serve index.html
   RewriteRule ^(.+)$ $1/ [R=301,L]
 </IfModule>
-DirectorIndex index.html
+DirectoryIndex index.html
