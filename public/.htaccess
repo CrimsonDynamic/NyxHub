@@ -89,10 +89,10 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Internally rewrite clean URLs to their index.html
+  # If the requested URL doesn't have a trailing slash and is not a file or folder
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.+)$ $1/index.html [L]
+  RewriteRule ^(.*)$ /$1/ [L,R=301]
 </IfModule>
 
 DirectoryIndex index.html
