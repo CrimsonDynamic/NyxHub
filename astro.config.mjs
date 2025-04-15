@@ -13,7 +13,7 @@ import remarkMath from "remark-math";
 export default defineConfig({
   site: "https://www.nyx.dog",
   base: "/",
-  trailingSlash: "ignore",
+  trailingSlash: "always",
   prefetch: {
     prefetchAll: true
   },
