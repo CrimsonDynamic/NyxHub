@@ -89,7 +89,7 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Redirect /about to /about/ if it's a directory
+  # Redirect /about to /about/ if it's a directory (optional)
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^([^/]+)$ /$1/ [R=301,L]
 
@@ -97,11 +97,12 @@
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
 
-  # Capture the path and rewrite to /path/index.html if it exists
+  # Rewrite /path to /path/index.html if it exists
   RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
   RewriteRule ^(.+)$ /$1/index.html [L]
 
-  # If nothing matched, return 404
-  RewriteRule ^.*$ - [R=404,L]
+  # If no match, show custom 404 page and send 404 status
+  RewriteRule ^.*$ /404.html [L,R=404]
 </IfModule>
+
 
