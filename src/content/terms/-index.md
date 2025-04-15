@@ -76,5 +76,5 @@ SOFTWARE.
 Dies ist eine rein private Website, die ausschließlich persönlichen Interessen und nicht-kommerziellen Projekten dient.  
 Alle Inhalte – einschließlich Blogbeiträge und Code – sind nicht geschäftsmäßig und verfolgen keinerlei kommerzielle Ziele.  
 Alle verlinkten Projekte sind Open Source und werden unentgeltlich bereitgestellt.  
-Kontakt bei Rückfragen: nyx[at]beispielmail[dot]com
+Kontakt bei Rückfragen: nyx[at]nyx[dot]dog
 
