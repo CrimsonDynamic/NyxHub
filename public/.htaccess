@@ -86,3 +86,11 @@
     Header append Vary: Accept-Encoding
   </FilesMatch>
 </IfModule>
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # If the requested URL doesn't have a trailing slash and is not a file or folder
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ /$1/ [L,R=301]
+</IfModule>
