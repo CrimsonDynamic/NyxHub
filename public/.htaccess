@@ -89,10 +89,18 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # If the requested URL doesn't have a trailing slash and is not a file or folder
+  # If the request is not a file or directory
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ /$1/ [L,R=301]
+
+  # Rewrite /about to /about/index.html if it exists
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+  RewriteRule ^(.*)$ /$1/index.html [L]
+
+  # If no matching file or folder, return 404 error (not just rewrite)
+  # Otherwise, return 404 status so Apache shows the custom page
+  RewriteRule ^.*$ - [R=404,L]
 </IfModule>
 
-DirectoryIndex index.html
+# Fallback 404
+ErrorDocument 404 /404.html
