@@ -1,7 +1,7 @@
 
 # NyxHub — Personal Website
 
-This is my personal website hosted at [nyx.dog](https://nyx.dog), built on top of the [Astrogon](https://github.com/reednel/astrogon) template by [Reed Nelson](https://github.com/reednel).  
+This is my personal website hosted at [nyx.dog](https://nyx.dog), built on top of the [Astrogon](https://github.com/astrogon/astrogon) template by [Reed Nelson](https://github.com/reednel).  
 I'm customizing it to reflect my creative and technical work.
 
 ---
@@ -30,6 +30,6 @@ NyxHub is my digital home — a central space for:
 
 ## Credits & License
 
-This site is based on [Astrogon](https://github.com/reednel/astrogon) by [Reed Nelson](https://github.com/reednel), licensed under the MIT License.
+This site is based on [Astrogon](https://github.com/astrogon/astrogon) by [Reed Nelson](https://github.com/reednel), licensed under the MIT License.
 
 All custom content, writing, and visual design are © Nyx.
